@@ -9,5 +9,15 @@
         "sourceType": "module"
     },
     "rules": {
+    },
+    "overrides": [
+    {
+      "files": ["*.config.js", "*.config.cjs", "*.config.mjs"],
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", {
+          "devDependencies": true
+        }]
+      }
     }
+  ]
 }
